@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <style>.error {
-            color: red;
-        }</style>
 
 </head>
 
@@ -73,8 +70,8 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                 aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Idées alternatives</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About la Page</a></li>
                     <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -133,14 +130,14 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
     </section>
     <section id="about" class="bg-primary text-white mb-0">
         <div class="container">
-            <h2 class="text-uppercase text-center text-white"></h2>
+            <h2 class="text-uppercase text-center text-white">About la Page</h2>
             <hr class="star-light mb-5">
             <div class="row">
                 <div class="col-lg-4 ml-auto">
-                    <p class="lead">Freelancer is a free bootstrap theme. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p class="lead">Les fêtes de fin d'année, c'est la période de tous les excès, de la surconsommation à outrance. Mais pas question d'y échapper, c'est vraiment trop bon !!! </p>
                 </div>
                 <div class="col-lg-4 mr-auto">
-                    <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p class="lead">Il suffit d'un peu de réflexion pour définir les limites que l'on souhaite s'imposer, le tout sans ruiner notre santé, notre portefeuille,...et notre planète.</p>
                 </div>
             </div>
             <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="#"><i class="fa fa-download mr-2"></i><span>Download Now!</span></a></div>
@@ -203,15 +200,15 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
             </div>
         </div>
     </section>
-    <footer class="footer text-center bg-dimgrey">
+    <footer class="footer text-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Adresse</h4>
-                    <p>17 rue Delandine<br>69002 LYON</p>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p>2215 John Daniel Drive<br>Clark, MO 65243</p>
                 </div>
-                <div class="col-md-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase">Suivez-nous !</h4>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase">Around the Web</h4>
                     <ul class="list-inline">
                         <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
                         <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
@@ -219,7 +216,10 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                         <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-dribbble fa-fw"></i></a></li>
                     </ul>
                 </div>
-
+                <div class="col-md-4">
+                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                    <p class="lead mb-0"><span>Freelance is a free to use, open source Bootstrap theme.&nbsp;</span></p>
+                </div>
             </div>
         </div>
     </footer>
