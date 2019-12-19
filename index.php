@@ -10,10 +10,64 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <style>.error {
+            color: red;
+        }</style>
 
 </head>
 
 <body id="page-top">
+<?php
+
+$firstNameErr = $lastNameErr = $emailErr = $messageErr = "";
+$firstName = $lastName = $email = $message = $don = $other = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty(trim($_POST["firstName"]))) {
+        $firstNameErr = "Entrez votre prénom";
+    } else {
+        $name = test_input($_POST["firstName"]);
+        if (!preg_match("/^[a-zA-Z ]*$/", $firstName)) {
+            $firstNameErr = "Caractères seulement !";
+        }
+    }
+
+    if (empty(trim($_POST["lastName"]))) {
+        $lastNameErr = "Entrez votre nom svp!";
+    } else {
+        $lastName = test_input($_POST["lastName"]);
+        if (!preg_match("/^[a-zA-Z ]*$/", $lastName)) {
+            $lastNameErr = "caractères seulement !";
+        }
+    }
+
+    if (empty($_POST["email"])) {
+        $emailErr = "Entrez votre mail svp !";
+    } else {
+        $email = test_input($_POST["email"]);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailErr = "format invalide";
+        }
+    }
+
+    if (empty($_POST["message"])) {
+        $messageErr = "Entrez un message svp !";
+    } else {
+        $message = test_input($_POST["message"]);
+    }
+}
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($lastNameErr) and empty($emailErr) and isset($_POST['champ'])) {
+    header("Location:action.php");
+    exit;
+}
+?>
         <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-dimgrey text-uppercase" id="mainNav">
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Christmas Ethic Shop</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -79,7 +133,7 @@
     </section>
     <section id="about" class="bg-primary text-white mb-0">
         <div class="container">
-            <h2 class="text-uppercase text-center text-white">About</h2>
+            <h2 class="text-uppercase text-center text-white"></h2>
             <hr class="star-light mb-5">
             <div class="row">
                 <div class="col-lg-4 ml-auto">
@@ -94,39 +148,70 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
+            <h2 class="text-uppercase text-center text-secondary mb-0">Contactez-nous</h2>
             <hr class="star-dark mb-5">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate" action="action.php" method="post">
                         <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="" placeholder="Name"><small class="form-text text-danger help-block"></small></div>
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label for="first_name">Prénom</label>
+                                <input class="form-control" type="text" name="firstName" id="first_name" placeholder="Prénom" required>
+                            </div>
+                            <span class="error"><?php echo $firstNameErr; ?></span>
                         </div>
                         <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><small class="form-text text-danger help-block"></small></div>
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label for="name">Nom</label>
+                                <input class="form-control" type="text" name="lastName" id="name" placeholder="Nom" required>
+                            </div>
+                            <span class="error"><?php echo $lastNameErr; ?></span>
                         </div>
                         <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><small class="form-text text-danger help-block"></small></div>
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label for="mail">Email</label>
+                                <input class="form-control" type="email" name="email" id="mail" placeholder="Email">
+                                <small class="form-text text-danger help-block"></small>
+                            </div>
+                            <span class="error"><?php echo $emailErr; ?></span>
                         </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="champ" id="exampleRadios1" value="faire un don">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Faire un don
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="champ" id="exampleRadios2" value="autre chose">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Autre
+                            </label>
+                        </div>
+
                         <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" rows="5"></textarea><small class="form-text text-danger help-block"></small></div>
+                            <div class="form-group floating-label-form-group controls mb-5 pb-2">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" name="message" id="message" placeholder="Message" rows="5"></textarea>
+                                <small class="form-text text-danger help-block"></small></div>
+                            <span class="error"><?php echo $messageErr; ?></span>
                         </div>
                         <div id="success"></div>
-                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Envoyez</button></div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer text-center">
+    <footer class="footer text-center bg-dimgrey">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p>2215 John Daniel Drive<br>Clark, MO 65243</p>
+                <div class="col-md-6 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Adresse</h4>
+                    <p>17 rue Delandine<br>69002 LYON</p>
                 </div>
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase">Around the Web</h4>
+                <div class="col-md-6 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase">Suivez-nous !</h4>
                     <ul class="list-inline">
                         <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
                         <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
@@ -134,15 +219,12 @@
                         <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-dribbble fa-fw"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                    <p class="lead mb-0"><span>Freelance is a free to use, open source Bootstrap theme.&nbsp;</span></p>
-                </div>
+
             </div>
         </div>
     </footer>
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright ©&nbsp;Brand 2018</small></div>
+        <div class="container"><small>Copyright ©&nbsp;WCS Hackaton 2019</small></div>
     </div>
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
