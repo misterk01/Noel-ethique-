@@ -80,53 +80,53 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
             </div>
         </div>
     </nav>
-    <header class="masthead bg-danger text-white text-center">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">
+    <header class="masthead text-white text-center">
+        <div class="container">
             <h1>Réveillons Autrement</h1>
             <hr class="star-light">
-            <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>
+            <h2 class="font-weight-light mb-0">Profitez des fêtes le coeur léger</h2>
         </div>
     </header>
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="text-uppercase text-center text-secondary">Portfolio</h2>
+            <h2 class="text-uppercase text-center text-secondary">Idées Alternatives</h2>
             <hr class="star-dark mb-5">
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/cabin.png"></a>
+                        </div><img class="img-fluid" src="assets/img/sapin.jpeg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/cake.png"></a>
+                        </div><img class="img-fluid ml-5" src="assets/img/bougie.jpeg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/circus.png"></a>
+                        </div><img class="img-fluid" src="assets/img/img-card2.jpg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-4">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/game.png"></a>
+                        </div><img class="img-fluid" src="assets/img/foie_gras.jpeg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-5">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/safe.png"></a>
+                        </div><img class="img-fluid" src="assets/img/crevetteResize.png"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-6">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/submarine.png"></a>
+                        </div><img class="img-fluid" src="assets/img/saumon.jpeg"></a>
                 </div>
             </div>
         </div>
@@ -235,15 +235,13 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cabin.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">Créer un sapin en bois flotté</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="./assets/img/diy-arbre-de-noël-sapin-noel-original-bois-flotté-howne.com_.jpg">
+                                <p class="mb-5">Le plus compliqué dans ce projet est de trouver du bois flotté. L'idéal est de le récupérer sur une plage, le sel permettant le séchage optimum en conservant l'intégrité de la matière. L'avantage : de nombreuses années pour en profiter.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
         </div>
     </div>
@@ -255,15 +253,13 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cake.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">Privilégier la technologie led</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/guirlande_led.jpeg">
+                                <p class="mb-5"><strong>Les raisons du succès de l’éclairage led :</strong><br> Économie d’énergie, Durabilité, Sans danger pour les usagers, Écologique, Eclairage adaptatif.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
         </div>
     </div>
@@ -275,15 +271,14 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/circus.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">Halte au gâchis</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/jouetBois.jpeg">
+                                <p class="mb-5">"Investissez" dans des cadeaux durables, en bois pourquoi pas.
+                                    Les fabricants français actuels ne travaillent que des essences de bois locales, et gèrent la culture sylvestre de façon éco-responsable.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
         </div>
     </div>
@@ -295,15 +290,14 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/game.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">Sauvez les oies et les canards</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/faux_gras.jpeg">
+                                <p class="mb-5">Si vous êtes opposé à l'élevage et au gavage des anatidés,
+                                    des produits de remplacement ont vu le jour : bon courage... </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
         </div>
     </div>
@@ -315,15 +309,14 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/safe.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">Sauvez les crevettes !!!</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/veggie_crevettes.jpeg">
+                                <p class="mb-5">Ou plutôt <strong>"Sauvez-vous, des crevettes molles !"</strong><br> L'invasion des crevettes végétales a débuté, et c'est juste immangeable.
+                                    Sauver la planète peut-être, mais il y a des limites à ne pas dépasser...</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
         </div>
     </div>
@@ -335,15 +328,13 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/submarine.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">Coucou c'est Tofu</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/tofu.jpg">
+                                <p class="mb-5">Pour ceux qui n'aiment ni la viande, ni le poisson, il reste le tofu.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
         </div>
     </div>
