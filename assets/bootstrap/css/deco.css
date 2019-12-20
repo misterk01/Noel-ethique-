@@ -13,3 +13,12 @@
 .copyright {
     background-color: #18bc9c;
 }
+#inputRadios2{
+    margin-left: 40px;
+}
+#labelRadios2{
+    margin-left: 60px;
+}
+.form-check{
+    margin-bottom: 50px;
+}

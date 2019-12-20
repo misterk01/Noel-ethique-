@@ -170,29 +170,29 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                                 <input class="form-control" type="email" name="email" id="mail" placeholder="Email">
                                 <small class="form-text text-danger help-block"></small>
                             </div>
-                            <span class="error"><?php echo $emailErr; ?></span>
                         </div>
 
+
+
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-5 pb-2">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" name="message" id="message" placeholder="Message" rows="4"></textarea>
+                                <small class="form-text text-danger help-block"></small></div>
+                            <span class="error"><?php echo $messageErr; ?></span>
+                        </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="champ" id="exampleRadios1" value="faire un don">
                             <label class="form-check-label" for="exampleRadios1">
                                 Faire un don
                             </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="champ" id="exampleRadios2" value="autre chose">
-                            <label class="form-check-label" for="exampleRadios2">
-                                Autre
+
+                            <input class="form-check-input" type="radio" name="champ" id="inputRadios2" value="participer à un évènement">
+                            <label class="form-check-label" for="exampleRadios2" id="labelRadios2">
+                                Participer à un évènement
                             </label>
                         </div>
 
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-5 pb-2">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" name="message" id="message" placeholder="Message" rows="5"></textarea>
-                                <small class="form-text text-danger help-block"></small></div>
-                            <span class="error"><?php echo $messageErr; ?></span>
-                        </div>
                         <div id="success"></div>
                         <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Envoyez</button></div>
                     </form>
