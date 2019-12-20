@@ -91,39 +91,39 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                        <div class="d-flex portfolio-item-caption position-absolute ">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="img  à modifier/sapin3.jpeg"></a>
+                        </div><img class="img-fluid fixImg" src="img  à modifier/sapin3.jpeg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                        <div class="d-flex portfolio-item-caption position-absolute ">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/bougie.jpeg"></a>
+                        </div><img class="img-fluid fixImg" src="assets/img/bougie.jpeg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                        <div class="d-flex portfolio-item-caption position-absolute ">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/img-card2.jpg"></a>
+                        </div><img class="img-fluid fixImg" src="assets/img/img-card2.jpg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-4">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                        <div class="d-flex portfolio-item-caption position-absolute ">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/foie_gras.jpeg"></a>
+                        </div><img class="img-fluid fixImg" src="assets/img/foie_gras.jpeg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-5">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                        <div class="d-flex portfolio-item-caption position-absolute ">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/crevetteResize.png"></a>
+                        </div><img class="img-fluid fixImg" src="assets/img/crevetteResize.png"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-6">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                        <div class="d-flex portfolio-item-caption position-absolute ">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/pereNoel.jpeg"></a>
+                        </div><img class="img-fluid fixImg" src="assets/img/pereNoel.jpeg"></a>
                 </div>
             </div>
         </div>
