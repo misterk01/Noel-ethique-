@@ -93,13 +93,13 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/sapin.jpeg"></a>
+                        </div><img class="img-fluid" src="img  à modifier/sapin3.jpeg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid ml-5" src="assets/img/bougie.jpeg"></a>
+                        </div><img class="img-fluid" src="assets/img/bougie.jpeg"></a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
@@ -123,7 +123,7 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-6">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/saumon.jpeg"></a>
+                        </div><img class="img-fluid" src="assets/img/pereNoel.jpeg"></a>
                 </div>
             </div>
         </div>
@@ -137,10 +137,10 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <p class="lead">Les fêtes de fin d'année, c'est la période de tous les excès, de la surconsommation à outrance. Mais pas question d'y échapper, c'est vraiment trop bon !!! </p>
                 </div>
                 <div class="col-lg-4 mr-auto">
-                    <p class="lead">Il suffit d'un peu de réflexion pour définir les limites que l'on souhaite s'imposer, le tout sans ruiner notre santé, notre portefeuille,...et notre planète.</p>
+                    <p class="lead">Il suffit d'un peu de bon sens pour définir les limites que l'on souhaite s'imposer, le tout sans ruiner notre santé, notre portefeuille,...et notre planète.</p>
                 </div>
             </div>
-            <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="#"><i class="fa fa-download mr-2"></i><span>Download Now!</span></a></div>
+           <!-- <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="#"><i class="fa fa-download mr-2"></i><span>C'est par là que ça se passe</span></a></div>-->
         </div>
     </section>
     <section id="contact">
@@ -205,20 +205,20 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
             <div class="row">
                 <div class="col-md-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Location</h4>
-                    <p>2215 John Daniel Drive<br>Clark, MO 65243</p>
+                    <p>17 rue Delandine<br>69002 Lyon</p>
                 </div>
                 <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase">Around the Web</h4>
+                    <h4 class="text-uppercase">Wild Code School</h4>
                     <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.wildcodeschool.com/fr-FR"><i class="fa fa-dribbble fa-fw"></i></a></li>
                         <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
                         <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
                         <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-dribbble fa-fw"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                    <p class="lead mb-0"><span>Freelance is a free to use, open source Bootstrap theme.&nbsp;</span></p>
+                    <h4 class="text-uppercase mb-4">Développeur</h4>
+                    <p class="lead mb-0"><span>Un métier de passion et d'abnégation.&nbsp;</span></p>
                 </div>
             </div>
         </div>
@@ -328,9 +328,9 @@ if (($_SERVER["REQUEST_METHOD"] == "POST") and empty($firstNameErr) and empty($l
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Coucou c'est Tofu</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/tofu.jpg">
-                                <p class="mb-5">Pour ceux qui n'aiment ni la viande, ni le poisson, il reste le tofu.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">Il faut que ça change,<br> y en a marre des barbus !!!</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/mereNoel.jpeg">
+                                <p class="mb-5">Quelle bonne idée...</p>
                             </div>
                         </div>
                     </div>
