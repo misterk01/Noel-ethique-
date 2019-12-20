@@ -13,6 +13,7 @@
 .copyright {
     background-color: #18bc9c;
 }
+
 #inputRadios2{
     margin-left: 40px;
 }
@@ -22,3 +23,10 @@
 .form-check{
     margin-bottom: 50px;
 }
+
+
+.fixImg {
+    height: 350px;
+    width: 350px;
+}
+
